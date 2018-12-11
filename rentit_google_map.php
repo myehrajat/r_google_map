@@ -30,8 +30,6 @@ add_action( 'wp_enqueue_scripts', 'RentIt_Google_Map_pass_mapOptions_vars',9999 
 		'zoom_scroll' =>get_theme_mod( 'map_zoom_scroll', NULL ),
 		//map_map_type_control
 		'map_type_control' =>get_theme_mod( 'map_map_type_control', NULL ),
-		//map_sensor
-		'sensor' =>get_theme_mod( 'map_sensor', NULL ),
 		//map_language
 		'language' =>get_theme_mod( 'map_language', NULL ),
 	);
