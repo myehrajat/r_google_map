@@ -88,18 +88,6 @@ function RentIt_Google_Map_customizer($wp_customize){
 		'priority' => 99,
         'type' => 'checkbox',
     ));	/***********/
-	$tmp_settingname = $tmp_sectionname . '_sensor';
-
-    $wp_customize->add_setting($tmp_settingname, array('default' => NULL,
-        'sanitize_callback' => 'wp_kses_post'));
-
-    $wp_customize->add_control($tmp_settingname . '_control', array(
-        'label' => esc_html__('Sensor permission', 'rentit'),
-        'section' => $tmp_sectionname . "_section",
-        'settings' => $tmp_settingname,
-		'priority' => 99,
-        'type' => 'checkbox',
-    ));	/***********/
 	$tmp_settingname = $tmp_sectionname . '_language';
 
     $wp_customize->add_setting($tmp_settingname, array('default' => 'en',
